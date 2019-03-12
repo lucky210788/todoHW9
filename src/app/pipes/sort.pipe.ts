@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SortPipe implements PipeTransform {
   transform(todoList, val: string) {
-    if (todoList){
+    if (todoList) {
       return todoList.filter((todoItem) => todoItem.status === val);
     }
     return todoList;
